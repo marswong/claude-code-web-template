@@ -18,9 +18,5 @@
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
-  "registries": {
-    "@acme": "https://registry.acme.com/{name}.json",
-    "@shadcn": "https://ui.shadcn.com/r/{name}.json",
-    "@v0": "https://v0.dev/chat/b/{name}"
-  }
+  "registries": {}
 }
