@@ -1,10 +1,11 @@
 import '@/styles/globals.css';
+import { Suspense } from 'react';
 import { META_THEME_COLORS, siteConfig } from '@/config/site';
 import { fontMono, fontSans } from '@/lib/fonts';
 import { ThemeProvider } from '@/components/theme-provider';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: {
@@ -89,7 +90,9 @@ export default function RootLayout({ children }) {
         >
           <div data-wrapper="" className="border-grid flex flex-1 flex-col">
             <SiteHeader />
-            {children}
+            <Suspense>
+              {children}
+            </Suspense>
             <SiteFooter />
           </div>
         </ThemeProvider>
