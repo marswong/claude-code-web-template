@@ -4,11 +4,11 @@
   "rsc": true,
   "tsx": false,
   "tailwind": {
-    "config": "",
+    "config": "tailwind.config.js",
     "css": "app/globals.css",
     "baseColor": "neutral",
     "cssVariables": true,
-    "prefix": ""
+    "prefix": "tw-"
   },
   "iconLibrary": "lucide",
   "aliases": {
@@ -18,5 +18,9 @@
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
-  "registries": {}
+  "registries": {
+    "@acme": "https://registry.acme.com/{name}.json",
+    "@shadcn": "https://ui.shadcn.com/r/{name}.json",
+    "@v0": "https://v0.dev/chat/b/{name}"
+  }
 }
