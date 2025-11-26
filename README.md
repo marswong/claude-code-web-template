@@ -1,11 +1,11 @@
-# gemini-web-template
+# claude-code-web-template
 
-The most reliable web template for Gemini.
+The most reliable web template for Claude Code.
 
 ## Usage
 
 ```bash
-npx degit marswong/claude-code-web-template#gemini app
+npx degit marswong/claude-code-web-template app
 cd app
 npm install
 npm run dev
@@ -24,9 +24,8 @@ npm start -- --port 1989
 
 ## Philosophy
 
-- To avoid unknown issues, only use `next`, `shadcn`, `lucide-react` and `tailwindcss@3`, don't introduce any other package
-- Build for model `gemini-3-pro-preview`, so all package versions and documentations should be published before the date `20250101`
-- Leverage local MCP servers to search for resources
+- To avoid unknown issues, only use `next@16`, `shadcn`, `lucide-react` and `tailwindcss@3`, don't introduce any other package
+- Build for model `claude-opus-4-5-20251101`, so all package versions and documentations should be published before the date `20251101`
 
 ## Reference
 
