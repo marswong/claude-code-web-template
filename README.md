@@ -24,9 +24,8 @@ npm start -- --port 1989
 
 ## Philosophy
 
-- To avoid unknown issues, only use `next`, `shadcn`, `lucide-react` and `tailwindcss@3`, don't introduce any other package
-- Build for model `claude-sonnet-4-5-20250929`, so all package versions and documentations should be published before the date `20250929`
-- Leverage local MCP servers to search for resources
+- To avoid unknown issues, only use `next@16`, `shadcn`, `lucide-react` and `tailwindcss@3`, don't introduce any other package
+- Build for model `claude-opus-4-5-20251101`, so all package versions and documentations should be published before the date `20251101`
 
 ## Reference
 
