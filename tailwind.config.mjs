@@ -1,7 +1,7 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
+import { fontFamily } from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   content: [
     './src/app/**/*.{js,jsx}',
     './src/components/**/*.{js,jsx}',
@@ -14,7 +14,7 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-  ],
-}
+  plugins: [],
+};
+
+export default config;
