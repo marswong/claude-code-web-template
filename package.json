@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/marswong/claude-code-web-template#readme",
   "dependencies": {
+    "better-sqlite3": "12.5.0",
     "clsx": "2.1.1",
     "geist": "1.5.1",
     "lucide-react": "0.555.0",
