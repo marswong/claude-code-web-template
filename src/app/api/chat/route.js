@@ -17,10 +17,17 @@ export async function POST(request) {
 			return NextResponse.json({ error: 'Message is required' }, { status: 400 });
 		}
 
+		const model = process.env.OPENAI_MODEL || 'gpt-4';
+
 		const completion = await openai.chat.completions.create({
-			model: 'gpt-4',
+			model,
 			messages: [{ role: 'user', content: message }],
 		});
+
+		// Validate completion response
+		if (!completion.choices || completion.choices.length === 0) {
+			throw new Error('No response from OpenAI');
+		}
 
 		return NextResponse.json({
 			response: completion.choices[0].message.content,

@@ -26,6 +26,7 @@ npm start -- --port 1989
 
 - To avoid unknown issues, only use `next@16`, `better-sqlite3`, `shadcn`, `lucide-react` and `tailwindcss@3`, don't introduce any other package
 - Build for model `claude-opus-4-5-20251101`, so all package versions and documentations should be published before the date `20251101`
+- Exception: The `openai` package is included for AI-related features development
 
 ## OpenAI Integration
 
@@ -43,6 +44,7 @@ Or create a `.env.local` file:
 
 ```
 OPENAI_API_KEY=your-api-key-here
+OPENAI_MODEL=gpt-4  # Optional, defaults to gpt-4
 ```
 
 ### Usage
