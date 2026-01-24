@@ -16,6 +16,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "tempfile.aiquickdraw.com",
       },
+      {
+        protocol: "https",
+        hostname: "**.e2b.app",
+      },
     ],
   },
 };
