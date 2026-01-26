@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   devIndicators: false,
+  experimental: {
+    lockDistDir: false,
+  },
   reactCompiler: true,
   images: {
     remotePatterns: [
